@@ -1,5 +1,7 @@
+import daos.DaoFactory;
 import models.Album;
 import models.Author;
+import models.Product;
 import models.Quote;
 
 import java.util.ArrayList;
@@ -69,5 +71,7 @@ public class BeanTest {
                     quote.getAuthor().getLastName());
         }
 
+        DaoFactory.getProductsDao().all();
+        DaoFactory.getProductsDao().insert(new Product()); // keeps using an existing
     }
 }
