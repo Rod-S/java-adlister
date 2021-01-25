@@ -11,6 +11,8 @@
     <div class="container">
         <h1>Viewing your profile.</h1>
     </div>
-
+    <form method="GET" action="/logout">
+        <button type="submit">LOGOUT</button>
+    </form>
 </body>
 </html>
